@@ -1,0 +1,9 @@
+.cuadrado {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 8px;
+}
+.cuadrado img {
+    width: 32px;
+    height: 32px;
+}

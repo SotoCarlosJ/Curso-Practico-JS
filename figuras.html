@@ -5,9 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Figuras Geométricas</h1>
+
+        <p>Este es el primer taller de curso práctico de JS <span>Platzi</span></p>
+    </header>
+
+    <nav>
+        <a href="">Cuadrado</a>
+        <a href="">Rectángulo</a>
+        <a href="">Círculo</a>
+        <a href="">Triángulo Isósceles</a>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2>Cálculos de perímtro y área</h2>
+
+            <div class="container-cuadrado">
+                <h3>Cuadrado</h3>
+                <form>
+                    <label for="sides">Escribe cuánto mide cada lado de tu cuadrado!</label>
+                    <input type="number" id="sides">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCuadrado()"type="button">Calcular el área</button>
+                </form>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/545/545666.png" alt="cuadrado"> -->
+            </div> <!-- .container-cuadrado -->
+
+            <div class="container-rectangulo">
+                <h3>Rectángulo</h3>
+                <form>
+                    <label for="sideA">Escribe cuánto mide el lado A de tu rectángulo!</label>
+                    <input type="number" id="sideA">
+                    <label for="sideB">Escribe cuánto mide el lado B de tu rectángulo!</label>
+                    <input type="number" id="sideB">
+                    <button type="button" onclick="calcularPerimetroRectangulo()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCuadrado()"type="button">Calcular el área</button>
+                </form>
+            </div> <!-- container-rectangulo -->
+
+            <div class="container-circulo">
+                <h3>Círculo</h3>
+                <form>
+                    <label for="ladosCuadrado">Escribe cuánto mide cada lado de tu cuadrado!</label>
+                    <input type="number" id="ladosCuadrado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCuadrado()"type="button">Calcular el área</button>
+                </form>
+            </div> <!-- .container-circulo -->
+
+            <div class="container-triangulo">
+                <h3>Triángulo Isósceles</h3>
+                <form>
+                    <label for="ladosCuadrado">Escribe cuánto mide cada lado de tu cuadrado!</label>
+                    <input type="number" id="ladosCuadrado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCuadrado()"type="button">Calcular el área</button>
+                </form>
+            </div>
+        </div> <!-- .container-triangulo -->
+    </section> 
 </body>
 <script src="./figuras.js"></script>
 </html>
