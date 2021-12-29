@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geométricas</title>
+    <title>Practicas</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./figurasStyles.css">
 </head>
 <body>
     <header>
-        <h1>Figuras Geométricas</h1>
-
+        <div class ="header">
+            <a href="/index.html">
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+            </a>
+    
+            <h1>Figuras Geométricas</h1>
+        </div>
         <p>Este es el primer taller de curso práctico de JS <span>Platzi</span></p>
     </header>
 
     <nav>
-        <div class="navegacion">
-            <a href="">Cuadrado</a>
-            <a href="">Rectángulo</a>
-            <a href="">Círculo</a>
-            <a href="">Triángulo</a>
-        </div>
+        <a href="#">Cuadrado</a>
+        <a href="#">Rectángulo</a>
+        <a href="#">Círculo</a>
+        <a href="#">Triángulo</a>
     </nav>
 
     <main>
@@ -42,8 +45,8 @@
                     </form>
                     <div class="container-cuadrado-resultado">
                         <h4>Resultados</h4>
-                        <p>Área: <span>Prueba</span></p>
-                        <p>Perímetro: <span>Prueba</span></p>
+                        <p>Perímetro: <span id="resultadoPerimetro"></span></p>
+                        <p>Área: <span id="resultadoArea"></span></span></p>
                     </div>
             </div> <!-- .container-cuadrado -->
     
@@ -89,6 +92,8 @@
             </div> <!-- .container-triángulo -->
          </div> <!-- .container -->
     </main> 
+
+    <script src="./figuras.js"></script>
 </body>
-<script src="./figuras.js"></script>
+
 </html>

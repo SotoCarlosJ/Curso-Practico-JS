@@ -7,13 +7,19 @@ function calcularPerimetroCuadrado() {
         alert('No ha ingresado un valor válido')
     } else{
         const perimetroCuadrado = perimetroDelCuadrado(value);
-        alert(`El resultado es: ${perimetroCuadrado} cm`);
+        const resultado = document.getElementById('resultadoPerimetro');
+        resultado.innerText = `${perimetroCuadrado} cm`;
     }
 }
 function calcularAreaCuadrado() {
     const value = document.getElementById("sides").value;
-    const areaCuadrado = areaDelCuadrado(value);
-    alert(`El área del cuadrado es: ${areaCuadrado} cm^2`);
+    if(value <= 0) {
+        alert('No ha ingresado un valor válido')
+    } else{
+        const areaCuadrado = areaDelCuadrado(value);
+        const resultado = document.getElementById('resultadoArea');
+        resultado.innerText = `${areaCuadrado} cm^2`;
+    }
 }
 
 // Código del Rectángulo

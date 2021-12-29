@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./descuentos.css">
+</head>
+<body>
+    <header>
+        <div class ="header">
+            <a href="/index.html">
+                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+            </a>
+    
+            <h1>Porcentajes y Descuentos</h1>
+        </div>
+        <p>Este es el segundo taller de curso práctico de JS <span>Platzi</span></p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="container-calculadora">
+                    <h2>Calcula tu descuento</h2>
+                    <form>
+                        <label for="price">Precio de tu producto</label>
+                        <input type="number" id="price" placeholder="Ingresa el precio">
+
+                        <div class="descuento">
+                            <label for="coupon">Cupón de Descuento</label>
+                            <input type="text" id="coupon" placeholder="Ingresa tu código" autocomplete="off">
+                            <button id="validar" type="button" onclick="validarElCupon()">Valida tu cupón</button>
+                            <p id="mensaje"></p>
+                        </div>
+                        
+                        <button id="button" type="button" onclick="calcularPrecioFinal()">Calcula tu precio</button>
+                    </form>
+                    <div class="container-calculadora-resultado">
+                        <h4>Precio Final</h4>
+                        <p>Total ahorrado $  <span id="descuento"></span></p>
+                        <p>Total a pagar $  <span id="precioFinal"></span></p>
+                    </div>
+            </div> <!-- .container-cuadrado -->
+    
+         </div> <!-- .container -->
+    </main> 
+
+    <script src="./descuentos.js"></script>
+</body>
+
+</html>

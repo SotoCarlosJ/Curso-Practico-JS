@@ -1,0 +1,132 @@
+:root {
+    --Lighter: rgb(70, 113, 156);
+    --Darker: rgb(60, 103, 146);
+    --White: #FFF;
+    --Black: #000;
+    --Verde: rgb(0, 255, 13);
+    --Amarillo: rgb(255, 251, 0);
+    --Mensaje: rgb(255, 196, 142);
+}
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: var(--Darker);
+}
+header {
+    text-align: center;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 16px 0;
+    
+    
+}
+.header h1 {
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+/* Estilos para el Cuadrado */
+.container-calculadora {
+    display: flex;
+    border: 1px solid var(--White);
+    box-shadow: 9px 7px 0px -1px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 9px 7px 0px -1px rgba(0,0,0,0.73);
+    -moz-box-shadow: 9px 7px 0px -1px rgba(0,0,0,0.73);
+    border-radius: 40px;
+    padding: 32px 64px;
+    background-color: var(--Darker);
+    flex-direction: column;
+    align-items: center;
+}
+.container-calculadora h2 {
+    margin: 0 0 32px;
+    color: var(--White);
+}
+.container-calculadora form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-calculadora form label {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: var(--White);
+}
+.container-calculadora form input {
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 32px;
+}
+#mensaje {
+    background-color: var(--Mensaje);
+    padding: 8px;
+    border-radius: 8px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+.descuento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.descuento label {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#coupon {
+    margin: 4px;
+}
+#validar {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--Amarillo);
+    font-size: 16px;
+}
+#button {
+    margin: 24px 0;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--Verde);
+    font-size: 16px;
+}
+#button:hover, 
+#validar:hover {
+    background-color: var(--Darker);
+    cursor: pointer;
+}
+.container-calculadora-resultado {
+    background-color: var(--White);
+    width: 256px;
+    border-radius: 8px;
+}
+h4 {
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    border-bottom: 1px solid var(--Darker);
+    box-shadow: 0px 2px var(--Darker) ;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+}
+.container-calculadora-resultado p {
+    padding-left: 12px;
+}
+.container-calculadora-resultado p:nth-child(2) {
+    border-bottom: 1px dashed var(--Darker);
+}
+.container-calculadora-resultado p:nth-child(2),
+.container-calculadora-resultado p:nth-child(3) {
+    margin-bottom: 0px;
+    padding-bottom: 6px;
+}
